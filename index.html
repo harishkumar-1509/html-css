@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css" type="text/css">
-    <title>Document</title>
+    <title>Home</title>
 </head>
 <body>
     <header>
@@ -103,11 +103,59 @@
                 Bangalore, Karnataka
             </address>
         </article>
+        <article>
+            <h2>Contact Me</h2>
+            <p>I'd really like to hear from you!</p>
+            <form action="https://htpbin.org/get" method="get">
+                <fieldset>
+                    <legend>Personal Info</legend>
+                    <p>
+                        <label for="firstName">First Name:</label>
+                        <input type="text" name="firstName" id="firstName" placeholder="First Name" autocomplete="on" required autofocus>
+                    </p>
+                    <p>
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" name="lastName" id="lastName" placeholder="Last Name" autocomplete="on" required>
+                    </p>
+                    <p>
+                        <label for="password">Password:</label>
+                        <input type="password" name="password" id="password" placeholder="Password" required>
+                    </p>
+                    <p>
+                        <label for="phone">Phone number:</label>
+                        <input type="tel" name="phone" id="phone" placeholder="Phone Number" pattern="[0-9]{10}" required>
+                    </p>
+                    <!-- <p>
+                        <label for="coffee">Favourite Coffee!</label>
+                        <select name="coffee" id="coffee" multiple size="5">
+                            <optgroup label="Coffees">
+                                <option value="regular coffee" selected>Regular Coffee</option>
+                                <option value="iced coffee">Iced Coffee</option>
+                            </optgroup>
+                            <optgroup label="Espresso Drinks">
+                                <option value="latte">Latte</option>
+                                <option value="cappuccino">Cappuccino</option>
+                            </optgroup>
+                            <option value="others">Others</option>
+                        </select>
+                    </p> -->
+                    <label for="coffee">Favourite Coffee!:</label>
+                    <input type="text" name="coffee" id="coffee" list="coffee-list">
+                    <datalist id="coffee-list">
+                        <option value="coffee"></option>
+                        <option value="latte"></option>
+                        <option value="espresso"></option>
+                        <option value="americano"></option>
+                        <option value="other"></option>
+                    </datalist>
+                </fieldset>
+            </form>
+        </article>
     </main>
     <hr>
     <footer>
         <p>&lt;&lt;&lt; &copy; <a href="about.html">Harish Kumar</a> &gt;&gt;&gt;</p>
-        <p><a href="/">Back To Top</a></p>
+        <p><a href="#">Back To Top</a></p>
     </footer>
 </body>
 </html>
