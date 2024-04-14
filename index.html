@@ -7,47 +7,107 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Hello World</h1>
+    <header>
+        <h1>Hello World</h1>
+
+        <nav aria-label="primary-navbar">
+            <ul>
+                <li><a href="#html">Learn HTML</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <hr>
 
-    <nav>
-        <ul>
-            <li><a href="#html">Learn HTML</a></li>
-        </ul>
-    </nav>
+    <main>
+        <article id="html">
+            <h2>I'm ready to learn HTML</h2>
+            <p>This is my first web page</p>
+            <section>
+                <figure>
+                    <img src="img/html-logo.png" alt="HTML Logo" title="I am learning HTML5" width="300" height="300" loading="lazy">
+                    <figcaption>HTML5 Logo</figcaption>
+                </figure>
+            </section>
+            <h3>My daily schedule</h3>
+            <p>Let me tell you how I
+                <!-- <br>&nbsp;&nbsp;&nbsp;...I learn more about <em>web dev</em>.
+                <br>&nbsp;&nbsp;&nbsp;...I plan out <strong>my schedule</strong>
+                <br>&nbsp;&nbsp;&nbsp;...I use resources from <abbr title="Udemy">Udemy</abbr> -->
+                
+                <ol>
+                    <li>...I learn more about <em>web dev</em>.</li>
+                    <li>...I plan out <strong>my schedule</strong></li>
+                    <li>...I use resources from <a href="https://www.udemy.com/">Udemy</a></li>
+                </ol>
 
+                <aside>
+                    <details>
+                        <summary>
+                            Guess the <mark>number of hours</mark> I code per day
+                        </summary>
+                        <p>
+                            I start at <time datetime="08:00">8 am</time> and write code for 5 hrs a day
+                        </p>
+                    </details>
+                </aside>
+                <br>
+                <table>
+                    <caption>My Daily Schedule</caption>
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Activity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <time datetime="08:00">8 am</time> - <time datetime="11:00">11 am</time>
+                            </td>
+                            <td>
+                                Write Code
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <time datetime="11:00">11 am</time> - <time datetime="12:00">12 pm</time>
+                            </td>
+                            <td>
+                                Eat Lunch
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">All Other Times</td>
+                            <td>Free Time</td>
+                        </tr>
+                        <tr>
+                            <td>Sleep</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2">And that's what I do everyday , 5 days a week. Just eat sleep code and repeat...</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </p>
+
+            <h4>Places I want to avoid</h4>
+            <dt>North Pole</dt>
+            <dd>I heard that this place is <strong>very cold!</strong></dd>
+            <dt>South Pole</dt>
+            <dd>This is also cold.</dd>
+
+            <address>
+                Bangalore, Karnataka
+            </address>
+        </article>
+    </main>
     <hr>
-    <section id="html">
-        <h2>I'm ready to learn HTML</h2>
-        <p>This is my first web page</p>
-        <img src="img/html-logo.png" alt="HTML Logo">
-        <h3>My daily schedule</h3>
-        <p>Let me tell you how I
-            <!-- <br>&nbsp;&nbsp;&nbsp;...I learn more about <em>web dev</em>.
-            <br>&nbsp;&nbsp;&nbsp;...I plan out <strong>my schedule</strong>
-            <br>&nbsp;&nbsp;&nbsp;...I use resources from <abbr title="Udemy">Udemy</abbr> -->
-            
-            <ol>
-                <li>...I learn more about <em>web dev</em>.</li>
-                <li>...I plan out <strong>my schedule</strong></li>
-                <li>...I use resources from <a href="https://www.udemy.com/">Udemy</a></li>
-            </ol>
-
-        </p>
-
-        <h4>Places I want to avoid</h4>
-        <dt>North Pole</dt>
-        <dd>I heard that this place is <strong>very cold!</strong></dd>
-        <dt>South Pole</dt>
-        <dd>This is also cold.</dd>
-
-        <address>
-            Bangalore, Karnataka
-        </address>
-    </section>
-    <hr>
-    &lt;&lt;&lt; &copy; <a href="about.html">Harish Kumar</a> &gt;&gt;&gt;
-    <p><a href="/">Back To Top</a></p>
+    <footer>
+        <p>&lt;&lt;&lt; &copy; <a href="about.html">Harish Kumar</a> &gt;&gt;&gt;</p>
+        <p><a href="/">Back To Top</a></p>
+    </footer>
 </body>
 </html>
