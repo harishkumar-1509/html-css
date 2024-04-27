@@ -1,0 +1,45 @@
+/* Universal Selector */
+
+/* * {
+  font-family: monospace;
+}
+
+html {
+  font-size: 22px;
+}
+
+body {
+}
+
+p {
+  color: purple;
+}
+
+.grey {
+  color: grey;
+}
+
+h1,
+h3 {
+  color: blue;
+}
+
+.highlight {
+  text-transform: uppercase;
+  background-color: gold;
+} */
+
+body {
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  background: papayawhip;
+  /* color: darkblue; */
+  color: rgb(0, 0, 0);
+}
+
+p {
+  /* color: rgba(0, 0, 0, 0.5); */
+  /* color: #000000; */
+  color: #0000ff;
+}
