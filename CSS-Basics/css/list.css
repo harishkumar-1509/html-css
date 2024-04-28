@@ -1,0 +1,42 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 5% 10%;
+  font-size: 2rem;
+  font-family: "Courier New", Courier, monospace;
+}
+
+ol {
+  /* list-style-type: lower-alpha; */
+  /* list-style-type: upper-roman;
+  list-style-type: decimal; */
+  list-style-type: none;
+  padding: 0;
+}
+
+ul {
+  list-style-type: square;
+  list-style-position: outside;
+  color: blue;
+  line-height: 1.6;
+}
+
+/* li:nth-child(2) {
+  color: red;
+} */
+li:nth-child(odd) {
+  color: red;
+}
+li:nth-last-child(1) {
+  color: purple;
+}
+
+::marker {
+  color: black;
+  content: "Only $5 >>";
+  font-size: 1rem;
+}
